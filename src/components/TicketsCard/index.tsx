@@ -2,6 +2,9 @@ import { View } from 'react-native';
 import { Container, LabelDate, LabelItem, BoxItemsCard, BoxStatus } from './styles';
 import { useMemo } from 'react';
 
+import { primary } from '../../defaultColors';
+
+
 interface DocumentData {
   id: string,
   name: string;
@@ -19,26 +22,26 @@ export default function TicketsCard({ data }: { data: DocumentData }) {
   const labelName = useMemo(() => { //Use Memo vai "memorizar" os dados 
     if(data.status == "Todos"){
         return{
-            color: "#C1F5F5",
+            color: {primary},
           
         }
     }else if(data.status == "Aberto"){
         return{
-            color: "#C1F5F5",
+            color: primary,
             
         }
     }else if(data.status == "Em Progresso"){
         return{
-            color: "#FFF1DB",
+            color: "#ffbd54",
             
         }
     }else{
         return{
-          color: "#F9E0E0",
+          color: "#ff7d7d",
          
         }
       }
-    }, [data]) //Tod
+    }, [data]) 
     
   
   return (

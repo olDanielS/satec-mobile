@@ -1,8 +1,8 @@
 import styled from "styled-components/native";
-import { primary } from '../../defaultColors';
+import { primary,gray_primary } from '../../defaultColors';
 
 export const Container = styled.View `
-background-color: ${primary};
+background-color: ${gray_primary};
 padding: 15px;
 height: 90px;
 

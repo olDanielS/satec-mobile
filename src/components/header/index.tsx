@@ -46,7 +46,6 @@ export default function Header() {
 
  return (
    <Container>
-        <StatusBar barStyle="light-content" backgroundColor={primary}/>
         <Hamburger onPress={() => navigation.toggleDrawer()}>
             <Feather name='align-right' size={30} color="#fff"/> 
         </Hamburger>

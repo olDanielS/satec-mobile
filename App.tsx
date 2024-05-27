@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
+import { bg_primary,gray_primary } from './src/defaultColors';
 
 import { LogBox } from 'react-native';
 
@@ -17,7 +18,7 @@ import AuthProvider from './src/contexts/Auth';
 export default function App() {
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor="#FFF" />
+      <StatusBar barStyle="light-content" backgroundColor={gray_primary} />
       <AuthProvider>
         <NavigationContainer>
           <Routes/>

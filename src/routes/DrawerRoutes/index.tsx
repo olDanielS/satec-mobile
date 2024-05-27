@@ -4,6 +4,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import CustomDrawer from "../../components/CustomDrawer";
 
 import Home from "../../pages/Home";
+import Home2 from "../../pages/Home2";
 import NewTicket from "../../pages/newTicket";
 import Tickets from "../../pages/Tickets";
 import Faqs from "../../pages/Faqs";
@@ -11,7 +12,7 @@ import Profile from "../../pages/Profile";
 
 
 type DrawerNavigation = {
-  Home: undefined;
+  Home2: undefined;
   NewTicket: undefined;
   Tickets: undefined;
   Faqs: undefined;
@@ -27,7 +28,7 @@ export default function DrawerRoutes() {
  
   return (
     <Drawer.Navigator drawerContent={(props) => <CustomDrawer {...props}/>}>
-      <Drawer.Screen name="Home" component={Home}
+      <Drawer.Screen name="Home2" component={Home2}
         options={{
           headerShown: false
         }}

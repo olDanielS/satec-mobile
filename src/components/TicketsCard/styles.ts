@@ -1,23 +1,25 @@
 import styled from "styled-components/native"
-import { gray, primary } from "../../defaultColors";
+import { gray, primary, gray_primary, white_primary } from "../../defaultColors";
 
 export const Container = styled.View`
-background-color: ${props => props.bg.color};
+background-color: ${gray_primary};
 margin-bottom: 10px;
 padding: 10px;
-
+border-left: 1px;
+border-left-width: 10px;
+border-left-color: ${props => props.bg.color};
 
 `
 export const LabelDate = styled.Text`
 font-size: 14px;
 margin-bottom: 5px;
-color: #000;
+color: ${white_primary};
 text-align: right;
 `
 export const LabelItem = styled.Text`
 font-size: 15px;
 margin-bottom: 5px;
-color: #000;
+color: ${white_primary};
 text-align: right;
 
 `

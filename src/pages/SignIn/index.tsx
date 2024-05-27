@@ -7,7 +7,7 @@ import {
 } from './styles'
 import { TouchableWithoutFeedback, Keyboard, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 
-import { gray } from '../../defaultColors';
+import { gray, bg_primary } from '../../defaultColors';
 
 import Feather from '@expo/vector-icons/Feather';
 
@@ -41,7 +41,7 @@ export default function SignIn() {
       <Container>
 
         <LogoArea>
-          <Logo source={require("../../assets/logo.png")} />
+          <Logo source={require("../../assets/logo2.png")} />
         </LogoArea>
 
         <InputArea>
