@@ -54,7 +54,10 @@ export default function CustomDrawer() {
           <CardOptionDrawerTitle>Home</CardOptionDrawerTitle>
       </CardOptionDrawer>
       <CardOptionDrawer onPress={() => navigation.navigate("Tickets")}>
-          <CardOptionDrawerTitle>Acompanhar chamados</CardOptionDrawerTitle>
+          <CardOptionDrawerTitle>Todos os chamados do sistema</CardOptionDrawerTitle>
+      </CardOptionDrawer>
+      <CardOptionDrawer onPress={() => navigation.navigate("Faqs")}>
+          <CardOptionDrawerTitle>Faqs</CardOptionDrawerTitle>
       </CardOptionDrawer>
       <CardOptionDrawer onPress={() => handleLogout()}>
           <CardOptionDrawerTitle>Sair</CardOptionDrawerTitle>

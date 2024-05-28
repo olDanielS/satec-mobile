@@ -23,7 +23,7 @@ interface DocumentData {
   name: string;
   description: string;
   lab: string;
-  created: Date;
+  created: any;
   createdFormat: string;
   equip: string;
   status: string;

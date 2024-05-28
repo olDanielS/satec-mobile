@@ -79,15 +79,10 @@ export default function NewTicket() {
             <Header />
             <Content>
               <Title>Abertura de chamado</Title>
-              <Label>Nome do solicitante <Title>(Autopreenchido)</Title></Label>
-              <Input
-                placeholder={`Aluno:  ${user.name.toUpperCase()} Autopreenchido`}
-                value={name}
-                onChangeText={(value: string) => setName(value)}
-                editable={false}
-              />
-
-              <Label>Laboratório</Label>
+              
+              <Label style={{fontWeight: "bold"}}>Nome do solicitante: {name}</Label>
+            
+              <Label>Laboratório *</Label>
 
               <Picker
                 selectedValue={selectedLab}
@@ -104,25 +99,27 @@ export default function NewTicket() {
                 
               </Picker>
 
-              <Label>N° de Patrimônio</Label>
+              <Label>N° de Patrimônio *</Label>
               <Input
                 placeholder="EX: 666"
                 value={number}
                 onChangeText={(value: string) => setNumber(value)}
+                keyboardType="numeric"
               />
 
-              <Label>Equipamento</Label>
+              <Label>Equipamento *</Label>
               <Input
                 placeholder="Ex: Computador"
                 value={equip}
                 onChangeText={(value: string) => setEquip(value)}
               />
 
-              <Label>Descrição do problema</Label>
+              <Label>Descrição do problema *</Label>
               <InputLong
                 placeholder="Descrição do problema e localização do equipamento(opcional)"
                 value={description}
                 onChangeText={(value: string) => setDescription(value)}
+                maxLength={250}
               />
 
               <SubmitArea onPress={() => handleRegister()}>

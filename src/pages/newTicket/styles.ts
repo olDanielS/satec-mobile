@@ -34,8 +34,8 @@ margin-bottom: 20px;
 
 `
 export const Label = styled.Text`
-font-size: 14px;
-margin-bottom: 5px;
+font-size: 16px;
+margin-bottom: 10px;
 
 `
 export const Input = styled.TextInput`
@@ -54,10 +54,10 @@ export const InputLong = styled.TextInput.attrs({
 })`
 
 width: 80%;
-height: 100px;
+height: 200px;
 background-color: #fff;
 border: 1px solid #9D9D9D;
-font-size: 14px;
+font-size: 16px;
 margin-bottom: 10px;
 border-radius: 7px;
 padding: 5px;
