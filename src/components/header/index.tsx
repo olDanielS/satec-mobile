@@ -1,9 +1,7 @@
 import React, {useContext} from 'react';
-import { Alert, StatusBar } from 'react-native';
+import { Alert } from 'react-native';
 
 import {Container, Hamburger, BtnLogout, Logo} from './styles';
-
-import { primary } from '../../defaultColors';
 import Feather from '@expo/vector-icons/Feather';
 import logo from '../../assets/logo2.png'
 
@@ -15,7 +13,7 @@ import { AuthContext } from '../../contexts/Auth';
 export default function Header() {
     const navigation = useNavigation<DrawerNavigationProp<ParamListBase>>();
 
-    const {Logout} = useContext(AuthContext)
+    const {Logout}:any = useContext(AuthContext)
 
     function handleLogout(){
         Alert.alert(

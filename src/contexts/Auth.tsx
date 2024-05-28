@@ -2,7 +2,6 @@ import { useState, createContext, ReactNode, useEffect } from "react";
 
 import { auth, db } from '../services/firebaseConnect';
 
-
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 

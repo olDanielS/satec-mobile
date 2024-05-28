@@ -1,14 +1,15 @@
+import { useState, useEffect} from 'react';
+
 import { Container, Title, Content, Head, Body } from './styles';
-import Header from '../../components/header';
-import { Collapse, CollapseHeader, CollapseBody, AccordionList } from 'accordion-collapse-react-native';
-import { ActivityIndicator, Text, TouchableOpacity } from 'react-native'
+import { ActivityIndicator, Text } from 'react-native'
+import { primary } from '../../defaultColors';
+import Header from '../../components/Header';
+
+import {AccordionList } from 'accordion-collapse-react-native';
 import Feather from '@expo/vector-icons/Feather'
 
 import { collection, getDocs, orderBy, limit, startAfter, query } from 'firebase/firestore';
 import { db } from "../../services/firebaseConnect";
-
-import { useState, useEffect} from 'react';
-import { primary } from '../../defaultColors';
 
 interface DocumentData {
   id: string,

@@ -3,11 +3,12 @@ import { primary, bg_primary, white_primary, gray_primary } from "../../defaultC
 
 export const Container = styled.View`
     flex: 1;
+    ;
 
 `
 export const Content = styled.View`
     flex: 1;
-    padding: 10px;
+    padding: 15px;
     background-color: ${bg_primary};
 `
 export const TitleArea = styled.View`
@@ -58,6 +59,8 @@ export const BtnOptions = styled.TouchableOpacity`
 `
 export const BtnText = styled.Text`
     color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
 `
 export const BtnFooter = styled.TouchableOpacity`
     background-color: ${primary};

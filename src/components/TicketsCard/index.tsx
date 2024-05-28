@@ -4,7 +4,6 @@ import { useMemo } from 'react';
 
 import { primary } from '../../defaultColors';
 
-
 interface DocumentData {
   id: string,
   name: string;

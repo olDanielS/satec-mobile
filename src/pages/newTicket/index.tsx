@@ -6,7 +6,7 @@ import { Container, Title, Content, Label, Input, InputLong,
 import { TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView,
    Platform, Alert, ActivityIndicator, ScrollView } from "react-native";
 
-import Header from "../../components/header";
+import Header from "../../components/Header";
 
 import { AuthContext } from "../../contexts/Auth";
 

@@ -2,7 +2,7 @@ import {
   Container, Title, Content, HorizontalCards,
   HorizontalCard, TextHorizontalCard,
 } from './styles';
-import Header from '../../components/header';
+import Header from '../../components/Header';
 import { TouchableWithoutFeedback, Keyboard, ScrollView, FlatList, View, ActivityIndicator } from 'react-native';
 import { gray, primary } from '../../defaultColors';
 import { useEffect, useState } from 'react';
